@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_appquickprofessionalwebsite3_FILE C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/build/WebAssembly_Qt_6_10_2_single_threaded-Debug/appquickprofessionalwebsite3.js)
+set(__QT_DEPLOY_TARGET_appquickprofessionalwebsite3_TYPE EXECUTABLE)

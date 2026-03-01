@@ -1,0 +1,7 @@
+module quickprofessionalwebsite3
+typeinfo appquickprofessionalwebsite3.qmltypes
+prefer :/qt/qml/quickprofessionalwebsite3/
+Main 254.0 Main.qml
+SkillBar 254.0 SkillBar.qml
+depends QtQuick
+

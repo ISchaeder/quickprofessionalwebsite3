@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="/qt/qml/quickprofessionalwebsite3/">
+    <file alias="Resources.qrc">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/Resources.qrc</file>
+    <file alias="Baldy_Mountain__Philmont.jpg">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/Baldy_Mountain__Philmont.jpg</file>
+    <file alias="Down-Arrow-Transparent-Image.png">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/Down-Arrow-Transparent-Image.png</file>
+    <file alias="linkdin.png">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/linkdin.png</file>
+    <file alias="github.png">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/github.png</file>
+    <file alias="emailicon.png">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/emailicon.png</file>
+    <file alias="bydesignscreenshot.png">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/bydesignscreenshot.png</file>
+    <file alias="headshot.jpg">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/headshot.jpg</file>
+    <file alias="computer.PNG">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/computer.PNG</file>
+    <file alias="busrouter.PNG">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/busrouter.PNG</file>
+    <file alias="perceptron.png">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/perceptron.png</file>
+  </qresource>
+</RCC>
+

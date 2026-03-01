@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="/qt/qml/quickprofessionalwebsite3/">
+    <file alias="Main.qml">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/Main.qml</file>
+    <file alias="SkillBar.qml">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/SkillBar.qml</file>
+  </qresource>
+</RCC>
+

@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/Resources">
+        <file>Baldy_Mountain__Philmont.jpg</file>
+        <file>Down-Arrow-Transparent-Image.png</file>
+        <file>linkdin.png</file>
+        <file>github.png</file>
+        <file>emailicon.png</file>
+        <file>headshot.jpg</file>
+        <file>bydesignscreenshot.png</file>
+        <file>Computer.PNG</file>
+        <file>busrouter.PNG</file>
+        <file>perceptron.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>busrouter.PNG</file>
+    </qresource>
+</RCC>

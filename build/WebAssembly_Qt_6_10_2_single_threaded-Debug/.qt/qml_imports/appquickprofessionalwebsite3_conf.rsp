@@ -1,0 +1,15 @@
+-rootPath
+C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3
+-cmake-output
+-output-file
+C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/build/WebAssembly_Qt_6_10_2_single_threaded-Debug/.qt/qml_imports/appquickprofessionalwebsite3_conf.cmake
+-importPath
+C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/build/WebAssembly_Qt_6_10_2_single_threaded-Debug
+-importPath
+C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/build/WebAssembly_Qt_6_10_2_single_threaded-Debug/quickprofessionalwebsite3
+-importPath
+C:/Qt/6.10.2/wasm_singlethread/qml
+-qrcFiles
+C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/build/WebAssembly_Qt_6_10_2_single_threaded-Debug/.qt/rcc/qmake_quickprofessionalwebsite3.qrc
+C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/build/WebAssembly_Qt_6_10_2_single_threaded-Debug/.qt/rcc/appquickprofessionalwebsite3_raw_qml_0.qrc
+C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/build/WebAssembly_Qt_6_10_2_single_threaded-Debug/.qt/rcc/appquickprofessionalwebsite3_raw_res_0.qrc
