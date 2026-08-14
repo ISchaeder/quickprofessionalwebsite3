@@ -24,6 +24,18 @@ set(src_and_dest_list
     "C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/build/WebAssembly_Qt_6_10_2_single_threaded-Debug/quickprofessionalwebsite3/busrouter.PNG"
     "C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/perceptron.png"
     "C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/build/WebAssembly_Qt_6_10_2_single_threaded-Debug/quickprofessionalwebsite3/perceptron.png"
+    "C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/digitalsynchronome.jpg"
+    "C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/build/WebAssembly_Qt_6_10_2_single_threaded-Debug/quickprofessionalwebsite3/digitalsynchronome.jpg"
+    "C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/projects.jpg"
+    "C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/build/WebAssembly_Qt_6_10_2_single_threaded-Debug/quickprofessionalwebsite3/projects.jpg"
+    "C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/Library.png"
+    "C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/build/WebAssembly_Qt_6_10_2_single_threaded-Debug/quickprofessionalwebsite3/Library.png"
+    "C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/stochasticcontrol.jpg"
+    "C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/build/WebAssembly_Qt_6_10_2_single_threaded-Debug/quickprofessionalwebsite3/stochasticcontrol.jpg"
+    "C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/abridge.png"
+    "C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/build/WebAssembly_Qt_6_10_2_single_threaded-Debug/quickprofessionalwebsite3/abridge.png"
+    "C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/DSP.PNG"
+    "C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/build/WebAssembly_Qt_6_10_2_single_threaded-Debug/quickprofessionalwebsite3/DSP.PNG"
 
 )
 set(timestamp_file "C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/build/WebAssembly_Qt_6_10_2_single_threaded-Debug/.qt/appquickprofessionalwebsite3_res.txt")

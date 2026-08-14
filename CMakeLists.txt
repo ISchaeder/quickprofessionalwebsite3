@@ -38,6 +38,12 @@ qt_add_qml_module(appquickprofessionalwebsite3
         RESOURCES computer.PNG
         RESOURCES busrouter.PNG
         RESOURCES perceptron.png
+        RESOURCES digitalsynchronome.jpg
+        RESOURCES projects.jpg
+        RESOURCES Library.png
+        RESOURCES stochasticcontrol.jpg
+        RESOURCES abridge.png
+        RESOURCES DSP.PNG
         QML_FILES SkillBar.qml
 )
 

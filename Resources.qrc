@@ -10,6 +10,12 @@
         <file>Computer.PNG</file>
         <file>busrouter.PNG</file>
         <file>perceptron.png</file>
+        <file>digitalsynchronome.jpg</file>
+        <file>projects.jpg</file>
+        <file>Library.png</file>
+        <file>stochasticcontrol.jpg</file>
+        <file>abridge.png</file>
+        <file>DSP.PNG</file>
     </qresource>
     <qresource prefix="/">
         <file>busrouter.PNG</file>

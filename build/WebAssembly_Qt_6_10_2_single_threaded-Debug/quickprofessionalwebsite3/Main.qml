@@ -72,6 +72,25 @@ ApplicationWindow {
                                                                  }
                 }
 
+                ToolButton { text: "Library"
+                                                                 MouseArea {
+                                                                     id: mouselibrary
+                                                                     anchors.fill: parent
+                                                                     hoverEnabled: true
+                                                                     cursorShape: Qt.PointingHandCursor
+
+                                                                     onClicked: {
+                                                                         let anim = Qt.createQmlObject('import QtQuick 2.15; NumberAnimation {}', flick);
+                                                                         anim.target = flick;
+                                                                         anim.property = "contentY";
+                                                                         anim.to = Screen.height * 3;
+                                                                         anim.duration = 500;
+                                                                         anim.easing.type = Easing.InOutQuad;
+                                                                         anim.start();
+                                                                     }
+                                                                 }
+                }
+
                 Item { Layout.fillWidth: true } // spacer to push items right
             }
         }
@@ -124,7 +143,7 @@ ApplicationWindow {
 
                     Text {
                         id: subtitle
-                        text: "Computer Science Graduate from Texas A&M"
+                        text: "Electrical Engineering Masters Student at Texas A&M"
                         anchors.horizontalCenter: parent.horizontalCenter
                         anchors.top: parent.top
                         anchors.topMargin: Screen.height / 25 + (parent.width / 10)   // distance from top
@@ -420,10 +439,7 @@ ApplicationWindow {
                                      }
 
                                      Text {
-                                         text: "Computer Science with mathematics concentration; recently graduated from Texas A&M with an aptitude for learning, eagerness for progress, and humility for correction.
-Foci in C++, Parallelization, Web Assembly, Mathematical computing with projects utilizing skills in the same.
-
-Check out my skills and see if I meet your needs!"
+                                         text: "Electrical and Computer Engineering Masters student at Texas A&M with a background in Computer Science and Mathematics, current interest in Embedded Systems, Real-Time Software, and Control Theory. Reach out and let's talk!"
 
                                          width: parent.width
                                          font.pixelSize: parent.width / 40
@@ -470,88 +486,80 @@ Check out my skills and see if I meet your needs!"
                                              SkillBar {
                                                  skillName: "C++"
                                                  skillProficiency: "Proficient"
-                                                 skillPercent: 0.9
+                                                 skillPercent: .95
                                                  flick: flick
                                              }
 
                                              SkillBar {
-                                                 skillName: "Web Assembly"
+                                                 skillName: "Real-Time Systems"
                                                  skillProficiency: "Experienced"
-                                                 skillPercent: 0.7
+                                                 skillPercent: 0.85
                                                  flick: flick
                                              }
 
                                              SkillBar {
-                                                 skillName: "Systems Programming"
+                                                 skillName: "Control Theory"
                                                  skillProficiency: "Experienced"
-                                                 skillPercent: 0.7
+                                                 skillPercent: 0.75
                                                  flick: flick
                                              }
 
                                              SkillBar {
                                                  skillName: "SQL, Redis, AWS databases"
                                                  skillProficiency: "Experienced"
-                                                 skillPercent: 0.5
+                                                 skillPercent: 0.65
                                                  flick: flick
                                              }
 
                                              SkillBar {
-                                                 skillName: "Java"
-                                                 skillProficiency: "Familiar"
-                                                 skillPercent: 0.5
-                                                 flick: flick
-                                             }
-
-                                             SkillBar {
-                                                 skillName: "Python"
-                                                 skillProficiency: "Familiar"
-                                                 skillPercent: 0.5
+                                                 skillName: "Systems and Parallel Computing"
+                                                 skillProficiency: "Experienced"
+                                                 skillPercent: 0.65
                                                  flick: flick
                                              }
 
                                              SkillBar {
                                                  skillName: "Github"
                                                  skillProficiency: "Familiar"
+                                                 skillPercent: 0.65
+                                                 flick: flick
+                                             }
+
+                                             SkillBar {
+                                                 skillName: "QML"
+                                                 skillProficiency: "This website :)"
+                                                 skillPercent: 0.55
+                                                 flick: flick
+                                             }
+
+                                             SkillBar {
+                                                 skillName: "Java"
+                                                 skillProficiency: "Familiar"
+                                                 skillPercent: 0.55
+                                                 flick: flick
+                                             }
+
+
+                                             SkillBar {
+                                                 skillName: "Java, Javascript, Dart, Python"
+                                                 skillProficiency: "Familiar"
                                                  skillPercent: 0.5
                                                  flick: flick
                                              }
 
                                              SkillBar {
-                                                 skillName: "Javascript"
-                                                 skillProficiency: "Familiar"
-                                                 skillPercent: 0.4
-                                                 flick: flick
-                                             }
-
-                                             SkillBar {
-                                                 skillName: "Dart"
-                                                 skillProficiency: "Familiar"
-                                                 skillPercent: 0.4
-                                                 flick: flick
-                                             }
-
-                                             SkillBar {
                                                  skillName: "Mathematical Computing"
-                                                 skillProficiency: "Have done"
-                                                 skillPercent: 0.3
+                                                 skillProficiency: "Have studied"
+                                                 skillPercent: 0.45
                                                  flick: flick
                                              }
 
                                              SkillBar {
                                                  skillName: "Cybersecurity"
-                                                 skillProficiency: "Have done"
-                                                 skillPercent: 0.3
+                                                 skillProficiency: "Have studied"
+                                                 skillPercent: 0.45
                                                  flick: flick
                                              }
-
-                                             SkillBar {
-                                                 skillName: "React"
-                                                 skillProficiency: "Have done"
-                                                 skillPercent: 0.3
-                                                 flick: flick
-                                             }
-
-
                                          }
                                      }
 
@@ -576,17 +584,125 @@ Check out my skills and see if I meet your needs!"
 
                         ListModel {
                             id: carouselModel
+                            ListElement { imageSource: "qrc:/Resources/projects.jpg"; caption: "Here is given a short summary of interesting projects I have done in my time as a student. Drag and scroll to see them all."}
+                            ListElement { imageSource: "qrc:/Resources/digitalsynchronome.jpg"; caption: "I designed a Digital Synchronome on embedded Linux in C++20 with a Raspberry Pi which tracks an analogue clock and synchronizes its own timing to that clock to get a unique image of each frame using custom image processing tools like the wavelet transform. The system is soft-hard real-time and is almost capable of acting 10 times a second with minimal error. I did extensive timing analysis and engaged with real-time theory to implement period transformations. I troubleshooted hardware issues wuch as brownouts on the microcontroller."}
                             ListElement { imageSource: "qrc:/Resources/bydesignscreenshot.png"; caption: "I was contracted by a small, local interior design firm to design a new database for the web to replace their previous, local Microsoft Access system. I designed a database system using Amazon Web Services’ Dynamo Database, E3 cloud storage to host user images, a backend written in Javascript with Express.js and a frontend webapplication made with the Qt framework and emscripten compiler in C++. The application had functioning database systems, user account creation, management, and moderation, printing, and camera functionality which was to be used for scanning barcodes. " }
                             ListElement { imageSource: "qrc:/Resources/Computer.PNG"; caption: "I designed a functioning Y-86 computer which was able to run assembly programs." }
                             ListElement { imageSource: "qrc:/Resources/busrouter.PNG"; caption: "For my senior capstone project, I helped work with several school districts to design software to route school busses. I contributed mostly to reworking software written for Linux to run on the web with webasembly and the algorithmic portion of the software. It was written in C++ and Dart using the Flutter frontend framework and Mongo DB." }
-                            ListElement { imageSource: "qrc:/Resources/perceptron.png"; caption: "I took a class in Natural Language processing where I implemented and trained a perceptron model capable of taking in a review of a movie and categorizing it as positive or negative with high accuracy." }
-                        }
+                            }
 
                         //Carousel based on the QT example made with a pathview component
                         PathView {
                             id: carousel
                             anchors.fill: parent
                             model: carouselModel
+                            interactive: true
+                            focus: true
+                            preferredHighlightBegin: 0.5
+                            preferredHighlightEnd: 0.5
+                            highlightRangeMode: PathView.StrictlyEnforceRange
+                            pathItemCount: 8
+
+                            path: Path {
+                                //startX: 0; startY: root.height / 2
+                                startX: -width * 1.2; startY: height / 2
+
+                                PathAttribute { name: "scale"; value: 0.15 }
+                                PathAttribute { name: "opacity"; value: 0.4 }
+
+                                PathQuad {
+                                    x: root.width / 2; y: root.height / 2
+                                    controlX: root.width / 5; controlY: root.height * 0.25
+                                }
+                                PathAttribute { name: "scale"; value: 1 }
+                                PathAttribute { name: "opacity"; value: 1.0 }
+
+                                //PathQuad {
+                                //    x: root.width; y: root.height / 2
+                                //    controlX: root.width * 3/4; controlY: root.height * 0.65
+                                //}
+
+                                PathQuad {
+                                        x: width * 2.5
+                                        y: height / 2
+                                        controlX: width * 0.9
+                                        controlY: height * 0.65
+                                    }
+
+                                PathAttribute { name: "scale"; value: 0.15 }
+                                PathAttribute { name: "opacity"; value: 0.4 }
+                            }
+
+                            delegate: Item {
+                                //width: 180
+                               // height: 200
+                                z: PathView.scale
+                                width: Screen.width * .75
+                                height: Screen.height * .75
+                                scale: PathView.scale
+                                opacity: PathView.opacity
+
+                                Column {
+                                    anchors.centerIn: parent
+                                    spacing: 8
+
+                                    Rectangle {
+                                        width: Screen.width * .75
+                                        height: Screen.height * .75
+                                        radius: 100
+                                        clip: true
+                                        border.width: 1
+                                        border.color: "#888"
+
+                                        Image {
+                                            anchors.fill: parent
+                                            fillMode: Image.PreserveAspectCrop
+                                            source: imageSource
+                                        }
+                                    }
+
+                                    Text {
+                                                 anchors.horizontalCenter: parent.horizontalCenter
+                                        width: Screen.width * .6
+                                        text: caption
+                                        horizontalAlignment: Text.AlignHCenter
+                                        wrapMode: Text.WordWrap
+                                        font.pixelSize: 16
+                                    }
+                                }
+                            }
+
+                            highlightMoveDuration: 400
+                        }
+
+                    }
+
+                }
+
+                Rectangle {
+                    id: library
+                    width: Screen.width
+                    height: Screen.height   //header size
+
+
+                    Item {
+                        id: root1
+                        width: Screen.width
+                        height: Screen.height
+
+                        ListModel {
+                            id: carouselModel1
+                            ListElement { imageSource: "qrc:/Resources/Library.png"; caption: "You can tell a lot about someone from the books on his shelf, here I've collected some of the things that I've been studying."}
+                            ListElement { imageSource: "qrc:/Resources/stochasticcontrol.jpg"; caption: "Stochastic Processes, Estimation, and Control by Jason L. Speyer and Walter H. Chung. A wonderful entry point for stochastic systems, stochastic calculus, and the Kalman filter (which is my current research subject). Advanced and in depth, but also self contained. Many alternatives keep only to discrete systems, but this one is sure to cover mean-square calculus and Ito integrals, which is definitely worth the time learning." }
+                            ListElement { imageSource: "qrc:/Resources/DSP.PNG"; caption: "Analogue Interface and DSP Sourcebook by Alan Clements. I'm taking a course using Open RTOS with a Texas Instruments DSP microcontroller; the topic is incredibley interesting, but does not go in depth on DSP architecture or instruction sets. This book covers common algorithms in signal processing, like the fast fourier transform, and its assembly implementation with DSP instruction sets." }
+                            ListElement { imageSource: "qrc:/Resources/abridge.png"; caption: "A Bridge to Advanced Mathematics by Dennis Sentilles. Diving into higher level courses in engineering has put me into contact with mathematical concepts beyond my undergraduate degree; while it's obvious that controls is a mathematics heavy field, discrete mathematics comes up a lot in scheduling and rate monotonic theory papers, and understanding the languages of proofs is incredibly useful." }
+                            }
+
+                        //Carousel based on the QT example made with a pathview component
+                        PathView {
+                            id: carousel1
+                            anchors.fill: parent
+                            model: carouselModel1
                             interactive: true
                             focus: true
                             preferredHighlightBegin: 0.5
@@ -603,7 +719,7 @@ Check out my skills and see if I meet your needs!"
 
                                 PathQuad {
                                     x: root.width / 2; y: root.height / 2
-                                    controlX: root.width / 4; controlY: root.height * 0.35
+                                    controlX: root.width / 5; controlY: root.height * 0.25
                                 }
                                 PathAttribute { name: "scale"; value: 1.0 }
                                 PathAttribute { name: "opacity"; value: 1.0 }
@@ -638,8 +754,9 @@ Check out my skills and see if I meet your needs!"
                                     spacing: 8
 
                                     Rectangle {
-                                        width: Screen.width * .75
+                                        width: Screen.width * .25
                                         height: Screen.height * .75
+
                                         radius: 10
                                         clip: true
                                         border.width: 1
@@ -647,6 +764,7 @@ Check out my skills and see if I meet your needs!"
 
                                         Image {
                                             anchors.fill: parent
+                                            horizontalAlignment: Text.AlignHCenter
                                             fillMode: Image.PreserveAspectCrop
                                             source: imageSource
                                         }

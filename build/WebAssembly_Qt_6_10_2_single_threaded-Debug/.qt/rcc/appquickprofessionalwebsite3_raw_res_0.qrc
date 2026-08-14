@@ -11,6 +11,12 @@
     <file alias="computer.PNG">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/computer.PNG</file>
     <file alias="busrouter.PNG">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/busrouter.PNG</file>
     <file alias="perceptron.png">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/perceptron.png</file>
+    <file alias="digitalsynchronome.jpg">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/digitalsynchronome.jpg</file>
+    <file alias="projects.jpg">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/projects.jpg</file>
+    <file alias="Library.png">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/Library.png</file>
+    <file alias="stochasticcontrol.jpg">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/stochasticcontrol.jpg</file>
+    <file alias="abridge.png">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/abridge.png</file>
+    <file alias="DSP.PNG">C:/Users/Ian/Documents/Qt/quickprofessionalwebsite3/DSP.PNG</file>
   </qresource>
 </RCC>
 
